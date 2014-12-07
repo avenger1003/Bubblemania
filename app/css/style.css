@@ -1,0 +1,113 @@
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -134px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 134px;
+      }
+        #footer {
+        position: relative;
+        background: url('../images/bg.png') repeat-x 0 0 transparent; 
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+    .container {
+      width: auto;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
+
+    .container .credit {
+      margin: 20px 0;
+    }
+
+    
+    #footer .mogli{
+      background: url('../images/sprite.png') no-repeat 0 transparent;
+      position: absolute;
+      left: 10%;
+      right: 0;
+      height: 245px;
+      width: 139px;
+      top: -119px;
+      z-index: 9;
+    }
+
+    #footer .mogli1{
+      background: url('../images/char-blue-1.png') no-repeat 0 transparent;
+      position: absolute;
+      left: 18%;
+      /* right: 0; */
+      height: 245px;
+      width: 139px;
+      top: -119px;
+      z-index: -1;
+      
+    }
+    #footer .mogli2{
+      background: url('../images/char-blue-2.png') no-repeat 0 transparent;
+      position: absolute;
+      left: 60%;
+      /* right: 0; */
+      height: 245px;
+      width: 139px;
+      top: -210px;
+      z-index: 9;
+    }
+    #footer .mogli3{
+      background: url('../images/char-blue-4.png') no-repeat 0 transparent;
+      position: absolute;
+      left: 70%;
+      top: 0;
+      height: 245px;
+      width: 139px;
+      top: -155px;
+      z-index: 9;
+     
+    }
+    .bubblemania{
+      background: url('../images/logo.png') no-repeat 0 transparent;
+      position: absolute;
+      right: 13%;
+      height: 65px;
+      width: 205px;
+      top: 10%;
+      z-index: 9;      
+    }
+    .author{
+      float: right;
+      padding: 30px;
+      margin: 58px 0 0;
+    }

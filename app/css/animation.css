@@ -1,0 +1,52 @@
+ .mogli{   
+    -webkit-animation:spinner 5s infinite; 
+  }
+  /* WebKit and Opera browsers */
+  @-webkit-keyframes spinner {
+    from { -webkit-transform: rotateY(0deg);    }
+    to   { -webkit-transform: rotateY(-360deg); }
+       /*from { margin-left:-20%; } to { margin-left:100%; }*/
+  }
+
+  /* all other browsers */
+  @keyframes spinner {
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-360deg);
+    }
+       /*from { margin-left:-20%; } to { margin-left:100%; }*/
+  }
+
+.mogli1{
+  -webkit-animation:hidenseek 5s infinite;
+}
+
+@-webkit-keyframes hidenseek {
+  from{top:-80%;}
+  to{top:-120%;}
+}
+
+.mogli2{
+  -webkit-animation:jumpingMogli2 5s infinite;
+}
+
+
+@-webkit-keyframes jumpingMogli2 {
+  from{top:-360%;}
+  to{top:-160%;}
+}
+
+.mogli3{
+  -webkit-animation:jumpingMogli 5s infinite;
+}
+
+@-webkit-keyframes jumpingMogli {
+  from{top:-160%;-webkit-transform: rotate(0deg);}
+  to{top:-90%;-webkit-transform: rotate(350deg);}
+}
